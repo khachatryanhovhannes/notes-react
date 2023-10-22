@@ -1,0 +1,49 @@
+.addButton {
+    margin-top: 20px;
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid rgb(54, 54, 54);
+    background-color: rgb(194, 194, 194);
+}
+
+.notes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.note {
+    width: 30%;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgb(87, 87, 87);
+    color: rgb(221, 221, 221);
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+.note>* {
+    overflow: hidden;
+}
+
+
+@media (max-width: 800px){
+    h1{
+        font-size: 25px;
+    }
+    .note{
+        width: 45%;
+    }
+}
+
+@media (max-width: 650px) {
+    .note{
+        width: 80%;
+    }
+    
+}

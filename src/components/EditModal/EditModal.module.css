@@ -1,0 +1,97 @@
+.editModalBack {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(65, 65, 65, 0.5);
+    border: 1px solid transparent;
+}
+
+.editModal {
+    width: 50%;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px
+}
+
+.closeButton {
+    display: flex;
+    justify-content: right;
+}
+
+.closeIcon {
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+form {
+    text-align: center;
+}
+
+form>div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+form label {
+    width: 15%;
+}
+
+form input[type='text'] {
+    width: 80%;
+    padding: 10px;
+}
+
+form textarea {
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+}
+
+form input[type='submit'] {
+    margin-top: 20px;
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid rgb(54, 54, 54);
+    background-color: rgb(194, 194, 194);
+}
+
+@media (max-width: 1150px) {
+    .editModal{
+       width: 80%;
+       margin-top: 50px;
+    }   
+    form label{
+        width: 20% !important;
+    }
+    form textarea {
+        width: 75% !important;
+    }
+
+    form input{
+        width: 75% !important;
+    }
+    
+}
+
+@media (max-width: 650px) {
+ form>div{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ form textarea {
+    margin-top: 10px;
+     width: 100% !important;
+ }
+
+ form input{
+     width: 100% !important;
+ }
+}

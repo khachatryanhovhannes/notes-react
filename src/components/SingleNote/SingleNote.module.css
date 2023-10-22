@@ -1,0 +1,52 @@
+.singleNoteBack {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(65, 65, 65, 0.5);
+    border: 1px solid transparent;
+}
+
+.singleNote{
+    width: 50%;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 10px 30px;
+}
+
+.controlButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px
+}
+
+.controlButtons>button{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.edit{
+    background-color: rgb(67, 207, 67);
+}
+
+.close{
+    background-color: rgb(97, 207, 207);
+}
+
+.remove{
+    background-color: rgb(233, 116, 116);
+}
+
+@media (max-width: 1150px) {
+    .singleNote{
+       width: 80%;
+       margin-top: 50px;
+    }   
+
+}
